@@ -32,7 +32,7 @@ import 'framework.dart';
 @immutable
 class ColorFiltered extends SingleChildRenderObjectWidget {
   /// Creates a widget that applies a [ColorFilter] to its child.
-  const ColorFiltered({required this.colorFilter, super.child, super.key});
+  const ColorFiltered({super.key, required this.colorFilter, super.child});
 
   /// The color filter to apply to the child of this widget.
   final ColorFilter colorFilter;
