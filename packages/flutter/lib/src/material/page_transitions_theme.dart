@@ -1016,7 +1016,7 @@ class _ZoomEnterTransitionPainter extends SnapshotPainter {
     fade.addListener(notifyListeners);
   }
 
-  void _onStatusChange(_) {
+  void _onStatusChange(AnimationStatus _) {
     notifyListeners();
   }
 
@@ -1105,7 +1105,7 @@ class _ZoomExitTransitionPainter extends SnapshotPainter {
     animation.addStatusListener(_onStatusChange);
   }
 
-  void _onStatusChange(_) {
+  void _onStatusChange(AnimationStatus _) {
     notifyListeners();
   }
 
